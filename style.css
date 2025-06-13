@@ -24,6 +24,7 @@ html {
 
 body {
   background: var(--bg-color);
+  color: var(--text-color);
 
 }
 
@@ -274,7 +275,7 @@ section {
 
 .services {
   background-color: var(--bg-color);
-  color: black;
+  color:var(--text-color);
 
 }
 
@@ -487,4 +488,10 @@ section {
     flex-direction: column;
 
   }
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--text-color);
+  opacity: 0.7;
 }
