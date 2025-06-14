@@ -19,8 +19,7 @@ Portfólio desenvolvido com **HTML**, **CSS** e **JavaScript** com foco em apres
 
 ## 💻 Acesse
 
-[Link do portfólio aqui](https://kayoisso.github.io/seu-repo)  
-*(Atualize com o link do seu projeto online)*
+[Link do portfólio aqui](https://github.com/kayoisso/meu-portifolio/tree/main)  
 
 ---
 
