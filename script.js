@@ -1,3 +1,5 @@
+// Menu responsivo: abre/fecha o menu ao clicar no ícone
+
 const menuIcon = document.querySelector('#menu-icon');
 const navbar = document.querySelector('.navbar');
 
@@ -5,6 +7,8 @@ menuIcon.onclick = () => {
     menuIcon.classList.toggle('bx-x');
     navbar.classList.toggle('active');
 };
+
+// Envio do formulário de contato para o WhatsApp
 
 document.addEventListener('DOMContentLoaded', function() {
   const form = document.getElementById('contactform');
@@ -21,4 +25,18 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+// Carrossel de projetos: mostra 4 cards por vez e navega com as setas
+document.addEventListener('DOMContentLoaded', function() {
+  const track = document.getElementById('carousel-track');
+  const btnLeft = document.getElementById('carousel-left');
+  const btnRight = document.getElementById('carousel-right');
+  const cardWidth = 340; // largura do card + gap
 
+  btnLeft.addEventListener('click', () => {
+    track.scrollBy({ left: -cardWidth, behavior: 'smooth' });
+  });
+
+  btnRight.addEventListener('click', () => {
+    track.scrollBy({ left: cardWidth, behavior: 'smooth' });
+  });
+});

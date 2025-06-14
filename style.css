@@ -346,14 +346,133 @@ section {
 
 }
 
+    /*PROJECTS*/
+
+.projects {
+  background: var(--second-bg-color);
+  padding: 2rem;
+}
+
+.projects .heading {
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+.carousel-container {
+  position: relative;
+  max-width: 1400px; 
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.carousel-track {
+  padding: 20px;
+  display: flex;
+  gap: 2rem;
+  transition: transform 0.5s;
+  will-change: transform;
+
+  overflow: hidden;
+  scroll-behavior: smooth;
+  justify-content: flex-start;
+  align-items: center;
+  width: fit-content;
+  scrollbar-width: none;
+}
+
+.carousel-track::-webkit-scrollbar {
+  display: none;
+}
+
+.project-card {
+  background: var(--bg-color);
+  border-radius: 2rem;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  padding: 3rem;
+  text-align: center;
+  color: var(--text-color);
+  flex-shrink: 0;
+  min-width: 320px;
+  max-width: 320px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border: 2px solid transparent;
+  transition: 0.5s;
+}
+
+
+.project-card:hover {
+  border-color: var(--main-color);
+  transform: scale(1.05);
+  box-shadow: 0 0 30px var(--main-color), 0 0 20px rgba(0,0,0,0.2);
+}
+
+.project-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.project-card h4 {
+  margin: 1rem 0 0.5rem 0;
+  color: var(--main-color);
+  font-size: 2.2rem;
+}
+
+.project-card p {
+  font-size: 1.4rem;
+  color: var(--text-color);
+}
+
+.carousel-btn {
+  background: var(--main-color);
+  border: none;
+  border-radius: 12px;
+  color: #fff;
+  font-size: 2.5rem;
+  width: 56px;
+  height: 56px;
+  cursor: pointer;
+  margin: 0 1rem;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s, color 0.3s, transform 0.2s, box-shadow 0.3s;
+  outline: none;
+  border: 2px solid transparent;
+}
+
+.carousel-btn:hover,
+.carousel-btn:focus-visible {
+  background: #fff;
+  color: var(--main-color);
+  border-color: var(--main-color);
+  transform: scale(1.12);
+  box-shadow: 0 6px 24px var(--main-color), 0 4px 16px rgba(0,0,0,0.15);
+}
+
     /*CONTACT*/
 
 .contact {
   background-color: var(--second-bg-color);
+  
+  
 
 }
 
+
 .contact h2 {
+  
   margin-bottom: 3rem;
   color: var(--text-color);
 
@@ -423,7 +542,7 @@ section {
 
 }
 
-.footer .copyright{
+.footer .copyright {
   text-align: center;
   margin-top: 40px;
   font-size: 12px;
@@ -454,7 +573,6 @@ section {
     font-size: 2rem;
     margin: 3rem 0;
     color: var(--text-color);
-
   }
 
   .navbar.active {
@@ -486,7 +604,6 @@ section {
   }
   .contact form{
     flex-direction: column;
-
   }
 }
 
