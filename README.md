@@ -15,8 +15,12 @@ Portfólio desenvolvido com **HTML**, **CSS** e **JavaScript** com foco em apres
 - Modo escuro  
 - Layout 100% responsivo  
 - Sessões: Sobre, Projetos, Habilidades, Contato e Blog  
-- Carrossel de imagens nos projetos
+- Carrossel de imagens nos projetos ✅
 
+## 💻 Acesse
+
+[Link do portfólio aqui](https://kayoisso.github.io/seu-repo)  
+*(Atualize com o link do seu projeto online)*
 
 ---
 
