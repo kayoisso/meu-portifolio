@@ -696,16 +696,67 @@ section {
     grid-template-columns: 1fr;
     max-width: 600px;
     padding: 1rem 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
+
+  .services-box {
+    width: 100%;
+    max-width: 400px;         /* Limita a largura das boxes */
+    margin: 0 auto 2rem auto; /* Centraliza e dá espaçamento */
+  }
+  .services-info {
+    padding: 2.5rem 1rem;
+  }
+  .services-info i {
+    font-size: 80px;
+  }
+  .services-info h4 {
+    font-size: 28px;
+  }
+  .services-info p {
+    font-size: 15px;
+  }
+
 }
 
 @media (max-width: 600px) {
+  .services-container{
+    margin: 0 auto;
+    padding: 1rem 0.5rem
+  }
+
+  .services-box {
+    max-width: 98vw;
+    width: 100%;
+    margin: 0 0 2rem 0;
+    border-radius: 2rem; /* Bordas arredondadas */
+    box-shadow: 0 2px 16px rgba(0,0,0,0.10); /* Opcional: leve sombra para destacar */
+    padding: 0.5rem; /* Espaço interno entre a borda da box e o conteúdo */
+  }
+
+  .services-info {
+    padding: 1.5rem 0.5rem;
+  }
+  .services-info i {
+    font-size: 50px;
+  }
+  .services-info h4 {
+    font-size: 20px;
+  }
+  .services-info p {
+    
+    font-size: 15px;
+  }
   .projects .heading {
     font-size: 3rem;
   }
 
   .carousel-container {
-    padding: 0.5rem 0;
+    padding: 1rem 0;
   }
 
   .carousel-btn {
@@ -715,26 +766,30 @@ section {
   }
 
   .carousel-track a.active {
-    padding-left: 8px;
-    padding-right: 8px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .project-card {
-    max-width: 98vw;
+    max-width: 92vw;
     width: 100%;
-    padding: 2rem 1rem;
+    padding: 1.2rem 0.7rem;
+    border-radius: 2rem 2rem 2rem 2rem;
+    box-sizing: border-box;
+    margin: 0 auto;
   }
 
   .project-card img {
-    height: 80px;
+    height: 70px;
   }
 
   .project-card h4 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 
   .project-card p {
-    font-size: 1.1rem;
+    padding: 23px;
+    font-size: 8px;
   }
 }
 
